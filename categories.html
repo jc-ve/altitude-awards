@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Altitude Awards</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Outfit:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="index.html">
+        <img
+          src="assets/images/logos/logo-altitude-awards.png"
+          alt="Altitude Awards"
+          class="header-logo"
+          title="Altitude Awards"
+        />
+      </a>
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a href="index.html" class="navigation-link">Home</a>
+          </li>
+          <li class="navigation-item">
+            <a href="categories.html" class="navigation-link active"
+              >Categories</a
+            >
+          </li>
+
+          <li class="navigation-item">
+            <a href="winners-and-gallery.html" class="navigation-link"
+              >Winners & Gallery</a
+            >
+          </li>
+          <li class="navigation-item">
+            <a href="#" class="navigation-link">Sponsors</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#" class="navigation-link">Contact</a>
+          </li>
+          <li class="navigation-item">
+            <a href="#" class="btn btn-primary">Enter Now</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section section-hero section-hero-categories">
+        <div class="u-container u-text-center u-text-white">
+          <header class="u-margin-bottom-sm">
+            <h1 class="heading heading-primary u-text-shadow">
+              Award Categories
+            </h1>
+          </header>
+          <p class="u-text-shadow u-margin-bottom-lg">
+            Choose the categories that best reflect your achievements,
+            leadership, and impact. Enter as many as you like.
+          </p>
+          <div class="cta">
+            <a href="#view" class="btn btn-white"> View Categories</a>
+            <a
+              href="mailto:info@womenwithaltitude.com.au"
+              class="btn btn-outline-light"
+              >Got Questions?</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-about">
+        <div class="u-container">
+          <div class="u-text-center u-margin-bottom-xl">
+            <header class="u-text center">
+              <h2 class="heading heading-secondary u-margin-bottom-md">
+                How <span class="u-text-primary">Entries</span> are Assessed
+              </h2>
+            </header>
+            <p class="u-margin-bottom-lg">
+              Every entry is reviewed by experienced judges who evaluate:
+            </p>
+          </div>
+          <div class="grid grid-4-cols">
+            <figure class="criteria">
+              <div class="criteria-icon u-margin-bottom-md">
+                <ion-icon name="bulb-outline"></ion-icon>
+              </div>
+              <h3 class="criteria-title u-margin-bottom-sm">
+                Innovation & Creativity
+              </h3>
+              <figcaption>
+                Fresh thinking, original approaches, and creative solutions that
+                set you apart — whether it's a new product, a reimagined
+                process, or a bold idea that challenged the norm.
+              </figcaption>
+            </figure>
+            <figure class="criteria">
+              <div class="criteria-icon u-margin-bottom-md">
+                <ion-icon name="stats-chart-outline"></ion-icon>
+              </div>
+              <h3 class="criteria-title u-margin-bottom-sm">
+                Impact & Results
+              </h3>
+              <figcaption>
+                Measurable outcomes and real-world difference — the growth
+                you've driven, the lives you've changed, and the tangible
+                results that prove your work matters.
+              </figcaption>
+            </figure>
+            <figure class="criteria">
+              <div class="criteria-icon u-margin-bottom-md">
+                <ion-icon name="eye-outline"></ion-icon>
+              </div>
+              <h3 class="criteria-title u-margin-bottom-sm">
+                Leadership & Vision
+              </h3>
+              <figcaption>
+                Inspiring others, leading with purpose, and driving meaningful
+                change — how you've guided your team, your community, or your
+                industry with integrity and a clear direction.
+              </figcaption>
+            </figure>
+            <figure class="criteria">
+              <div class="criteria-icon u-margin-bottom-md">
+                <ion-icon name="leaf-outline"></ion-icon>
+              </div>
+              <h3 class="criteria-title u-margin-bottom-sm">
+                Sustainability & Growth
+              </h3>
+              <figcaption>
+                Building something that lasts — long-term thinking, scalable
+                strategy, and a vision for continued growth that goes beyond
+                short-term wins.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="view" class="section section-categories">
+        <div class="u-container">
+          <div class="u-margin-bottom-lg u-text-center">
+            <header class="u-margin-bottom-md">
+              <h2 class="heading heading-secondary">
+                Find Your <span class="u-text-primary">Category</span>
+              </h2>
+            </header>
+            <p>
+              Every woman's journey is different — and so are our award
+              categories.
+            </p>
+          </div>
+
+          <div class="categories-btns u-margin-bottom-xl">
+            <button
+              class="category-btn btn btn-outline active"
+              data-tab="business"
+            >
+              Business Categories
+            </button>
+            <button class="category-btn btn btn-outline" data-tab="leadership">
+              Leadership Categories
+            </button>
+            <button class="category-btn btn btn-outline" data-tab="community">
+              Community Categories
+            </button>
+          </div>
+
+          <div class="categories categories-business active">
+            <div class="u-margin-bottom-lg">
+              <header class="u-margin-bottom-sm">
+                <h3 class="heading heading-tertiary">Business Categories</h3>
+              </header>
+              <p>
+                For women building, growing, and leading businesses across all
+                industries.
+              </p>
+            </div>
+            <div class="grid grid-3-cols">
+              <div class="category">
+                <img
+                  src="assets/images/categories/category-passion-and-perseverance.jpg"
+                  alt="Passion & Perseverance Award"
+                  class="category-img"
+                />
+                <div class="category-body">
+                  <h4 class="category-title u-margin-bottom-sm">
+                    Passion & Perseverance Award
+                  </h4>
+                  <p class="u-margin-bottom-md">
+                    Honouring relentless dedication, resilience, and the drive
+                    to overcome challenges in the pursuit of business success.
+                  </p>
+
+                  <div class="category-btns">
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                    <a href="#" class="btn btn-outline">See Guidelines</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="category">
+                <img
+                  src="assets/images/categories/category-one-to-watch.jpg"
+                  alt="One to Watch Award"
+                  class="category-img"
+                />
+                <div class="category-body">
+                  <h4 class="category-title u-margin-bottom-sm">
+                    One to Watch Award
+                  </h4>
+                  <p class="u-margin-bottom-md">
+                    Spotlighting emerging entrepreneurs who are introducing
+                    fresh, innovative ideas and show great potential for future
+                    success.
+                  </p>
+
+                  <div class="category-btns">
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                    <a href="#" class="btn btn-outline">See Guidelines</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="category">
+                <img
+                  src="assets/images/categories/category-maverick-entrepreneur.jpg"
+                  alt="Maverick Entrepreneur Award"
+                  class="category-img"
+                />
+                <div class="category-body">
+                  <h4 class="category-title u-margin-bottom-sm">
+                    Maverick Entrepreneur Award
+                  </h4>
+                  <p class="u-margin-bottom-md">
+                    Celebrating bold risk-takers who build businesses through
+                    creativity and unconventional thinking.
+                  </p>
+
+                  <div class="category-btns">
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                    <a href="#" class="btn btn-outline">See Guidelines</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="categories categories-leadership">
+            <div class="u-margin-bottom-lg">
+              <header class="u-margin-bottom-sm">
+                <h3 class="heading heading-tertiary">Leadership Categories</h3>
+              </header>
+              <p>
+                For women who lead with purpose within an organisation or
+                industry.
+              </p>
+            </div>
+            <div class="grid grid-3-cols">
+              <div class="category">
+                <img
+                  src="assets/images/categories/category-team-of-the-year.jpg"
+                  alt="Team of the Year Award"
+                  class="category-img"
+                />
+                <div class="category-body">
+                  <h4 class="category-title u-margin-bottom-sm">
+                    Team of the Year Award
+                  </h4>
+                  <p class="u-margin-bottom-md">
+                    Honouring teams that deliver outstanding results through
+                    collaboration and positive impact.
+                  </p>
+
+                  <div class="category-btns">
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                    <a href="#" class="btn btn-outline">See Guidelines</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="category">
+                <img
+                  src="assets/images/categories/category-changemaker.jpg"
+                  alt="The Changemaker Award"
+                  class="category-img"
+                />
+                <div class="category-body">
+                  <h4 class="category-title u-margin-bottom-sm">
+                    The Changemaker Award
+                  </h4>
+                  <p class="u-margin-bottom-md">
+                    Honouring those who drive positive change in their community
+                    or industry and inspire others to follow their lead.
+                  </p>
+
+                  <div class="category-btns">
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                    <a href="#" class="btn btn-outline">See Guidelines</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="category">
+                <img
+                  src="assets/images/categories/category-pioneering-achievement.jpg"
+                  alt="Pioneering Achievement Award"
+                  class="category-img"
+                />
+                <div class="category-body">
+                  <h4 class="category-title u-margin-bottom-sm">
+                    Pioneering Achievement Award
+                  </h4>
+                  <p class="u-margin-bottom-md">
+                    Celebrating trailblazers with 10+ years of dedicated service
+                    and lasting industry impact.
+                  </p>
+
+                  <div class="category-btns">
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                    <a href="#" class="btn btn-outline">See Guidelines</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="categories categories-community">
+            <div class="u-margin-bottom-lg">
+              <header class="u-margin-bottom-sm">
+                <h3 class="heading heading-tertiary">Community Categories</h3>
+              </header>
+              <p>For women making a real difference beyond business</p>
+            </div>
+            <div class="grid grid-3-cols">
+              <div class="category">
+                <img
+                  src="assets/images/categories/category-program-excellence.jpg"
+                  alt="Program Excellence Award"
+                  class="category-img"
+                />
+                <div class="category-body">
+                  <h4 class="category-title u-margin-bottom-sm">
+                    Program Excellence Award
+                  </h4>
+                  <p class="u-margin-bottom-md">
+                    Celebrating exceptional programs that deliver measurable
+                    success in community wellbeing.
+                  </p>
+
+                  <div class="category-btns">
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                    <a href="#" class="btn btn-outline">See Guidelines</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="category">
+                <img
+                  src="assets/images/categories/category-charity-champion.jpg"
+                  alt="Charity Champion Award"
+                  class="category-img"
+                />
+                <div class="category-body">
+                  <h4 class="category-title u-margin-bottom-sm">
+                    Charity Champion Award
+                  </h4>
+                  <p class="u-margin-bottom-md">
+                    Acknowledging individuals and organisations making a lasting
+                    charitable community impact.
+                  </p>
+
+                  <div class="category-btns">
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                    <a href="#" class="btn btn-outline">See Guidelines</a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="category">
+                <img
+                  src="assets/images/categories/category-community-builder.jpg"
+                  alt="Community Builder Award"
+                  class="category-img"
+                />
+                <div class="category-body">
+                  <h4 class="category-title u-margin-bottom-sm">
+                    Community Builder Award
+                  </h4>
+                  <p class="u-margin-bottom-md">
+                    Recognising significant contributions to building and
+                    strengthening local communities.
+                  </p>
+
+                  <div class="category-btns">
+                    <a href="#" class="btn btn-primary">Learn More</a>
+                    <a href="#" class="btn btn-outline">See Guidelines</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="src/script.js"></script>
+  </body>
+</html>
