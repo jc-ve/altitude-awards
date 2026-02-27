@@ -4,7 +4,7 @@ const categoryBtns = document.querySelector(".categories-btns");
 const categoryBtn = document.querySelectorAll(".category-btn");
 const categoriesContent = document.querySelectorAll(".categories");
 
-if (window.location.pathname === "/categories.html") {
+if (window.location.pathname.endsWith("categories.html")) {
   categoryBtns.addEventListener("click", (e) => {
     const clicked = e.target.closest(".category-btn");
 
