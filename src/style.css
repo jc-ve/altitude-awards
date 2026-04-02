@@ -483,6 +483,8 @@ h6 {
 .winner-name {
   font-family: var(--font-heading);
   font-size: 2.4rem;
+  line-height: 1.2;
+  margin-bottom: 0.8rem;
 }
 
 .winner-award {
@@ -532,6 +534,11 @@ h6 {
 .winner:hover .overlay {
   opacity: 1;
   visibility: visible;
+}
+
+.brave-winners-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
 }
 
 /* LAYOUT */
