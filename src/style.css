@@ -245,6 +245,17 @@ h6 {
   background-position: center 10%;
 }
 
+.section-hero-contact {
+  background: linear-gradient(
+      135deg,
+      rgba(235, 199, 206, 0.85),
+      rgba(217, 139, 160, 0.85),
+      rgba(231, 199, 135, 0.85)
+    ),
+    url(../assets/images/background/bg-contact.jpg);
+  background-position: center 10%;
+}
+
 .section-sponsors {
   padding: 7.2rem 0 4.8rem;
 }
@@ -354,10 +365,13 @@ h6 {
   background-color: var(--clr-white);
 }
 
-.btn-form-inline {
-  align-self: end;
+.btn-form {
   border-radius: 8px;
   padding: 0.8rem 1.2rem;
+}
+
+.btn-form-inline {
+  align-self: end;
 }
 
 .sponsors {
@@ -644,9 +658,12 @@ h6 {
 
 .cta {
   display: flex;
+  gap: 1.6rem;
+}
+
+.cta-centered {
   align-items: center;
   justify-content: center;
-  gap: 1.6rem;
 }
 
 .benefits {
@@ -682,6 +699,19 @@ h6 {
   color: var(--clr-primary);
 }
 
+.form-regular {
+  padding: 2.4rem;
+  background-color: var(--clr-white);
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.form-regular .form-input {
+  box-shadow: 0 0 0 1px inset var(--clr-primary--800);
+}
+
 .form-inline {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -703,13 +733,24 @@ h6 {
   border: none;
   background-color: var(--clr-white);
 }
-/* PLUGINS */
-/* .swiper-slide {
-  height: auto;
-} */
 
-.swiper-button-prev,
-.swiper-button-next {
-  color: var(--clr-primary);
-  opacity: 0.4;
+.past-winners {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.past-winners-imgs {
+  display: flex;
+}
+
+.past-winners-img {
+  height: 5.2rem;
+  width: 5.2rem;
+  border-radius: 50%;
+  border: 3px solid var(--clr-white);
+}
+
+.past-winners-img:not(:first-child) {
+  margin-left: -1.2rem;
 }
