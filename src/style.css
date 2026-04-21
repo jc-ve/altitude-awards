@@ -287,6 +287,10 @@ h6 {
   padding: 7.2rem 0 5.6rem;
 }
 
+.section-gallery {
+  padding: 5.2rem 0;
+}
+
 .btn,
 .btn:link,
 .btn:visited {
@@ -569,9 +573,50 @@ h6 {
   visibility: visible;
 }
 
-.brave-winners-container {
+.brave-winners {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.4rem;
+}
+
+.brave {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  flex: 0 0 calc(20% - 1rem);
+}
+
+.brave-img {
+  height: 18rem;
+  width: 18rem;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--clr-primary);
+}
+
+.brave-name:link,
+.brave-name:visited {
+  font-weight: 600;
+  color: var(--clr-black);
+  text-decoration: none;
+}
+
+.brave-name:hover,
+.brave-name:active {
+  color: var(--clr-primary);
+  text-decoration: underline;
+}
+
+.lb-gallery-2x2 {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2.4rem;
+}
+
+.lb-gallery-img {
+  border-radius: 8px;
 }
 
 /* LAYOUT */
