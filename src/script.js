@@ -1,8 +1,15 @@
 "use strict";
 
+const btnNavigation = document.querySelector("#btn-navigation");
+const elHeader = document.querySelector("#header");
+
 const categoryBtns = document.querySelector(".categories-btns");
 const categoryBtn = document.querySelectorAll(".category-btn");
 const categoriesContent = document.querySelectorAll(".categories");
+
+btnNavigation.addEventListener("click", () => {
+  elHeader.classList.toggle("active");
+});
 
 if (window.location.pathname.endsWith("categories.html")) {
   categoryBtns.addEventListener("click", (e) => {
