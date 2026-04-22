@@ -27,6 +27,18 @@ html {
   scroll-behavior: smooth;
 }
 
+@media only screen and (max-width: 62em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+@media only screen and (max-width: 36em) {
+  html {
+    font-size: 50%;
+  }
+}
+
 body {
   box-sizing: border-box;
   font-family: var(--font-body);
@@ -147,6 +159,42 @@ h6 {
   font-size: 3.2rem;
 }
 
+@media only screen and (max-width: 48em) {
+  .heading-primary {
+    font-size: 4.4rem;
+  }
+
+  .heading-secondary {
+    font-size: 4rem;
+  }
+
+  .heading-tertiary {
+    font-size: 3.6rem;
+  }
+
+  .heading-four {
+    font-size: 2.8rem;
+  }
+}
+
+@media only screen and (max-width: 36em) {
+  .heading-primary {
+    font-size: 4rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.6rem;
+  }
+
+  .heading-tertiary {
+    font-size: 3.2rem;
+  }
+
+  .heading-four {
+    font-size: 2.4rem;
+  }
+}
+
 /* COMPONENTS */
 
 .header {
@@ -185,6 +233,12 @@ h6 {
 
 .navigation-link.active {
   color: var(--clr-primary);
+}
+
+@media only screen and (max-width: 48em) {
+  .navigation-list {
+    display: none;
+  }
 }
 
 .section {
@@ -254,18 +308,19 @@ h6 {
     ),
     url(../assets/images/background/bg-contact.jpg);
   background-position: center 10%;
+  padding: 6.4rem 2.4rem;
 }
 
 .section-sponsors {
-  padding: 7.2rem 0 4.8rem;
+  padding: 7.2rem 2.4rem 4.8rem;
 }
 
 .section-about {
-  padding: 7.2rem 0 6.4rem;
+  padding: 7.2rem 2.4rem 6.4rem;
 }
 
 .section-testimonials {
-  padding: 4.8rem 0 6.4rem;
+  padding: 4.8rem 2.4rem 6.4rem;
   background: linear-gradient(
     135deg,
     rgb(235, 199, 206),
@@ -275,31 +330,65 @@ h6 {
 }
 
 .section-cta {
-  padding: 5.2rem 0 6.4rem;
+  padding: 5.2rem 2.4rem 6.4rem;
 }
 
 .section-entries {
-  padding: 8.4rem 0 7.2rem;
+  padding: 8.4rem 2.4rem 7.2rem;
 }
 
 .section-categories {
-  padding: 6.4rem 0 5.6rem;
+  padding: 6.4rem 2.4rem 5.6rem;
 }
 
 .section-winners {
-  padding: 8.4rem 0 6.4rem;
+  padding: 8.4rem 2.4rem 6.4rem;
 }
 
 .section-faq {
-  padding: 6.4rem 0 5.2rem;
+  padding: 6.4rem 2.4rem 5.2rem;
 }
 
 .section-partnership {
-  padding: 7.2rem 0 5.6rem;
+  padding: 7.2rem 2.4rem 5.6rem;
 }
 
 .section-gallery {
-  padding: 5.2rem 0;
+  padding: 5.2rem 2.4rem;
+}
+
+@media only screen and (max-width: 36em) {
+  .section-hero {
+    min-height: 50vh;
+  }
+
+  .section-sponsors {
+    padding: 5.6rem 2.4rem 4rem;
+  }
+
+  .section-about {
+    padding: 4.8rem 2.4rem 5.2rem;
+  }
+
+  .section-categories {
+    padding: 4.8rem 2.4rem;
+  }
+
+  .section-winners {
+    padding: 4.8rem 1.6rem;
+  }
+
+  .section-gallery {
+    padding: 3.6rem 2.4rem;
+  }
+
+  .section-partnership {
+    padding: 5.6rem 2.4rem 4rem;
+  }
+
+  .section-faq {
+    padding: 4.8rem 2.4rem 1.6rem;
+  }
 }
 
 .btn,
@@ -313,6 +402,27 @@ h6 {
   transition: all 0.3s ease-in-out;
   cursor: pointer;
   background: none;
+}
+
+.btn-navigation {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.4rem;
+  color: var(--clr-white);
+  background-color: var(--clr-primary);
+  padding: 0.8rem;
+  border-radius: 8px;
+}
+
+@media only screen and (max-width: 48em) {
+  .btn-navigation {
+    display: flex;
+    visibility: visible;
+    opacity: 1;
+  }
 }
 
 .btn-primary,
@@ -379,6 +489,7 @@ h6 {
   gap: 2.4rem;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .sponsors-logo {
@@ -409,6 +520,12 @@ h6 {
 .testimonial-role {
   font-size: 1.4rem;
   font-weight: 300;
+}
+
+@media only screen and (max-width: 36em) {
+  .testimonial-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 .gallery {
@@ -449,6 +566,27 @@ h6 {
   border-radius: 0px 24px 24px 0px;
 }
 
+@media only screen and (max-width: 48em) {
+  .community {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 36em) {
+  .community {
+    grid-template-columns: 1fr;
+    border-radius: 16px;
+  }
+
+  .community-text {
+    padding: 3.2rem;
+  }
+
+  .community-img {
+    border-radius: 0 0 16px 16px;
+  }
+}
+
 .criteria-icon {
   display: flex;
   align-items: center;
@@ -481,6 +619,11 @@ h6 {
   text-overflow: ellipsis;
 }
 
+.category-img {
+  width: 100%;
+  object-fit: cover;
+}
+
 .category-body {
   padding: 2.4rem 1.6rem 3.2rem 1.6rem;
   overflow: visible;
@@ -491,11 +634,19 @@ h6 {
   gap: 1.6rem;
 }
 
+@media only screen and (max-width: 48em) {
+  .category-btns {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
 .categories-btns {
   display: flex;
   gap: 1.6rem;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .category-btn.active {
@@ -542,6 +693,24 @@ h6 {
   font-size: 1.4rem;
   line-height: 1.2;
   color: var(--clr-gray);
+}
+
+@media only screen and (max-width: 48em) {
+  .winners-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (max-width: 36em) {
+  .winners-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 25em) {
+  .winners-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 .overlay {
@@ -602,6 +771,12 @@ h6 {
   flex: 0 0 calc(20% - 1rem);
 }
 
+@media only screen and (max-width: 48em) {
+  .brave {
+    flex: auto;
+  }
+}
+
 .brave-img {
   height: 18rem;
   width: 18rem;
@@ -656,14 +831,40 @@ h6 {
   align-items: center;
 }
 
+@media only screen and (max-width: 62em) {
+  .grid-2-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-3-cols,
+  .grid-4-cols {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 36em) {
+  .grid-3-cols,
+  .grid-4-cols {
+    grid-template-columns: 1fr;
+  }
+}
+
 .cta {
   display: flex;
   gap: 1.6rem;
+  text-align: center;
 }
 
 .cta-centered {
   align-items: center;
   justify-content: center;
+}
+
+@media only screen and (max-width: 36em) {
+  .cta {
+    flex-direction: column;
+    align-items: stretch;
+  }
 }
 
 .benefits {
@@ -718,6 +919,12 @@ h6 {
   gap: 2.4rem;
 }
 
+@media only screen and (max-width: 36em) {
+  .form-inline {
+    grid-template-columns: 1fr;
+  }
+}
+
 .form-label {
   display: block;
   font-weight: 700;
@@ -753,4 +960,10 @@ h6 {
 
 .past-winners-img:not(:first-child) {
   margin-left: -1.2rem;
+}
+
+@media only screen and (max-width: 36em) {
+  .past-winners {
+    flex-direction: column;
+  }
 }
