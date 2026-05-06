@@ -390,6 +390,39 @@ h6 {
   padding: 5.2rem 2.4rem;
 }
 
+.section-inner-category {
+  background: linear-gradient(
+    135deg,
+    #f9e8f0,
+    #e8a4c4,
+    #9e1f63,
+    #6e1548,
+    #3d0c2b
+  );
+  min-height: 50vh;
+  padding: 6.4rem 2.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-about-award {
+  padding: 7.2rem 2.4rem 5.2rem;
+}
+
+.section-judges {
+  padding: 4.8rem 2.4rem 6.4rem;
+}
+
+.section-last-winner {
+  padding: 4.8rem 2.4rem 7.2rem;
+}
+
+.section-cta-block {
+  background-color: var(--clr-primary);
+  padding: 5.2rem 2.4rem;
+}
+
 @media only screen and (max-width: 36em) {
   .section-hero {
     min-height: 50vh;
@@ -1008,4 +1041,43 @@ h6 {
   .past-winners {
     flex-direction: column;
   }
+}
+
+.last-winner {
+  display: flex;
+  gap: 2.4rem;
+  padding: 3.2rem;
+  background: linear-gradient(
+    135deg,
+    #e8c97a,
+    #d4b465,
+    #bfa050,
+    #9a8040,
+    #7a6530
+  );
+
+  border-radius: 24px;
+}
+
+.last-winner-img {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+  flex-shrink: 0;
+  object-fit: cover;
+  object-position: 10% 5%;
+  border: 4px solid var(--clr-white);
+}
+
+.last-winner-links {
+  display: flex;
+  gap: 1.6rem;
+  flex-wrap: wrap;
+}
+
+.last-winner-link:link,
+.last-winner-link:visited {
+  color: var(--clr-white);
+  text-decoration: none;
+  font-size: 2.4rem;
 }
