@@ -291,9 +291,11 @@ h6 {
 .section-hero-home {
   background: linear-gradient(
       135deg,
-      rgba(235, 199, 206, 0.85),
-      rgba(217, 139, 160, 0.85),
-      rgba(231, 199, 135, 0.85)
+      rgba(249, 232, 240, 0.85),
+      rgba(232, 164, 196, 0.85),
+      rgba(158, 31, 99, 0.85),
+      rgba(110, 21, 72, 0.85),
+      rgba(61, 12, 43, 0.85)
     ),
     url(../assets/images/background/bg-hero.jpg);
   background-position: center 20%;
@@ -302,9 +304,11 @@ h6 {
 .section-hero-categories {
   background: linear-gradient(
       135deg,
-      rgba(235, 199, 206, 0.85),
-      rgba(217, 139, 160, 0.85),
-      rgba(231, 199, 135, 0.85)
+      rgba(249, 232, 240, 0.85),
+      rgba(232, 164, 196, 0.85),
+      rgba(158, 31, 99, 0.85),
+      rgba(110, 21, 72, 0.85),
+      rgba(61, 12, 43, 0.85)
     ),
     url(../assets/images/background/bg-categories.jpg);
   background-position: center 10%;
@@ -313,9 +317,11 @@ h6 {
 .section-hero-winners {
   background: linear-gradient(
       135deg,
-      rgba(235, 199, 206, 0.85),
-      rgba(217, 139, 160, 0.85),
-      rgba(231, 199, 135, 0.85)
+      rgba(249, 232, 240, 0.85),
+      rgba(232, 164, 196, 0.85),
+      rgba(158, 31, 99, 0.85),
+      rgba(110, 21, 72, 0.85),
+      rgba(61, 12, 43, 0.85)
     ),
     url(../assets/images/background/bg-winners-and-gallery.jpg);
   background-position: center 10%;
@@ -324,9 +330,11 @@ h6 {
 .section-hero-sponsors {
   background: linear-gradient(
       135deg,
-      rgba(235, 199, 206, 0.85),
-      rgba(217, 139, 160, 0.85),
-      rgba(231, 199, 135, 0.85)
+      rgba(249, 232, 240, 0.85),
+      rgba(232, 164, 196, 0.85),
+      rgba(158, 31, 99, 0.85),
+      rgba(110, 21, 72, 0.85),
+      rgba(61, 12, 43, 0.85)
     ),
     url(../assets/images/background/bg-sponsors.jpg);
   background-position: center 10%;
@@ -335,9 +343,11 @@ h6 {
 .section-hero-contact {
   background: linear-gradient(
       135deg,
-      rgba(235, 199, 206, 0.85),
-      rgba(217, 139, 160, 0.85),
-      rgba(231, 199, 135, 0.85)
+      rgba(249, 232, 240, 0.85),
+      rgba(232, 164, 196, 0.85),
+      rgba(158, 31, 99, 0.85),
+      rgba(110, 21, 72, 0.85),
+      rgba(61, 12, 43, 0.85)
     ),
     url(../assets/images/background/bg-contact.jpg);
   background-position: center 10%;
@@ -356,9 +366,11 @@ h6 {
   padding: 4.8rem 2.4rem 6.4rem;
   background: linear-gradient(
     135deg,
-    rgb(235, 199, 206),
-    rgb(217, 139, 160),
-    rgb(231, 199, 135)
+    #f9e8f0,
+    #e8a4c4,
+    #9e1f63,
+    #6e1548,
+    #3d0c2b
   );
 }
 
@@ -419,13 +431,22 @@ h6 {
 }
 
 .section-cta-block {
-  background-color: var(--clr-primary);
+  background: linear-gradient(
+    135deg,
+    #f2c4d0,
+    #d4a07a,
+    #9e1f63,
+    #c7547e,
+    #f2c4d0
+  );
+
   padding: 5.2rem 2.4rem;
 }
 
 @media only screen and (max-width: 36em) {
   .section-hero {
     min-height: 50vh;
+    padding: 5.6rem 2.4rem;
   }
 
   .section-sponsors {
@@ -454,6 +475,22 @@ h6 {
 
   .section-faq {
     padding: 4.8rem 2.4rem 1.6rem;
+  }
+
+  .section-about-award {
+    padding: 5.6rem 2.4rem 4rem;
+  }
+
+  .section-judges {
+    padding: 4rem 2.4rem 5.2rem;
+  }
+
+  .section-last-winner {
+    padding: 4rem 2.4rem 5.6rem;
+  }
+
+  .section-cta-block {
+    padding: 4.4rem 2.4rem;
   }
 }
 
