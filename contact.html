@@ -150,45 +150,64 @@
                 </p>
               </div>
             </div>
-            <form action="" class="form form-regular">
+            <form
+              action="https://api.web3forms.com/submit"
+              class="form form-regular"
+              method="POST"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="a5cd2416-613e-4340-9186-e80083ef53e3"
+              />
               <div class="form-group">
-                <label for="" class="form-label"
+                <label for="name" class="form-label"
                   >Full Name / Business Name</label
                 >
                 <input
                   type="text"
                   class="form-input"
                   placeholder="Full name or Business Name"
+                  id="name"
                 />
               </div>
               <div class="form-group">
-                <label for="" class="form-label">Email Address</label>
+                <label for="email" class="form-label">Email Address</label>
                 <input
                   type="text"
                   class="form-input"
                   placeholder="Email Address"
+                  id="email"
                 />
               </div>
               <div class="form-group">
-                <label for="" class="form-label">Subject</label>
-                <select name="" id="" class="form-input">
-                  <option value="">Please Choose One Option:</option>
-                  <option value="">Entering the Awards</option>
-                  <option value="">Award Categories</option>
-                  <option value="">Sponsorship</option>
-                  <option value="">General Enquiry</option>
+                <label for="subject" class="form-label">Subject</label>
+                <select name="" id="" class="form-input" id="subject">
+                  <option value="Entering the Awards">
+                    Entering the Awards
+                  </option>
+                  <option value="Award Categories">Award Categories</option>
+                  <option value="Sponsorship">Sponsorship</option>
+                  <option value="General Enquiry">General Enquiry</option>
                 </select>
               </div>
               <div class="form-group">
-                <label for="" class="form-label">Message</label>
+                <label for="message" class="form-label">Message</label>
                 <textarea
-                  name=""
-                  id=""
+                  name="message"
+                  id="message"
                   class="form-input"
                   placeholder="Message..."
                 ></textarea>
+                <input
+                  type="hidden"
+                  name="redirect"
+                  value="https://web3forms.com/success"
+                />
               </div>
-              <button class="btn btn-primary btn-form">Send a Message</button>
+              <button class="btn btn-primary btn-form" type="submit">
+                Send a Message
+              </button>
             </form>
           </div>
         </div>

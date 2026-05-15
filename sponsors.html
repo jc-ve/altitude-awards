@@ -341,36 +341,57 @@
                 we'll send you our sponsorship pack.
               </p>
 
-              <form action="" class="form form-inline">
+              <form
+                action="https://api.web3forms.com/submit"
+                class="form form-inline"
+                method="POST"
+              >
+                <input
+                  type="hidden"
+                  name="access_key"
+                  value="a5cd2416-613e-4340-9186-e80083ef53e3"
+                />
                 <div class="form-group">
-                  <label for="" class="form-label"
+                  <label for="name" class="form-label"
                     >Full Name / Business Name</label
                   >
                   <input
                     type="text"
                     class="form-input"
                     placeholder="Full Name or Business Name"
+                    id="name"
                   />
                 </div>
                 <div class="form-group">
-                  <label for="" class="form-label">Email Address</label>
+                  <label for="email" class="form-label">Email Address</label>
                   <input
                     type="email"
                     class="form-input"
                     placeholder="Email Address"
+                    id="email"
                     required
                   />
                 </div>
                 <div class="form-group">
-                  <label for="" class="form-label">Sponsorship Interest</label>
-                  <select name="" id="" class="form-input">
-                    <option value="">Please Choose One Option:</option>
-                    <option value="">Major Sponsor</option>
-                    <option value="">Category Sponsor</option>
-                    <option value="">In-Kind / Services Partner</option>
-                    <option value="">Not sure yet — send me the pack</option>
+                  <label for="sponsorship" class="form-label"
+                    >Sponsorship Interest</label
+                  >
+                  <select name="" id="sponsorship" class="form-input" required>
+                    <option value="Major Sponsor">Major Sponsor</option>
+                    <option value="Category Sponsor">Category Sponsor</option>
+                    <option value="In-Kind / Services Partner">
+                      In-Kind / Services Partner
+                    </option>
+                    <option value="Not sure yet — send me the pack">
+                      Not sure yet — send me the pack
+                    </option>
                   </select>
                 </div>
+                <input
+                  type="hidden"
+                  name="redirect"
+                  value="https://web3forms.com/success"
+                />
                 <button
                   class="btn btn-outline-light btn-form btn-form-inline"
                   type="submit"
