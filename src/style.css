@@ -1059,6 +1059,11 @@ h6 {
   background-color: var(--clr-white);
 }
 
+.form-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.4rem rgba(224, 97, 127, 0.5);
+}
+
 .past-winners {
   display: flex;
   align-items: center;
