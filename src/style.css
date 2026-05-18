@@ -290,8 +290,7 @@ h6 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background-size: cover;
-  background-repeat: no-repeat;
+  padding: 6.4rem 2.4rem;
 }
 
 .section-hero-home {
@@ -305,6 +304,8 @@ h6 {
     ),
     url(../assets/images/background/bg-hero.jpg);
   background-position: center 20%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .section-hero-categories {
@@ -318,6 +319,8 @@ h6 {
     ),
     url(../assets/images/background/bg-categories.jpg);
   background-position: center 10%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .section-hero-winners {
@@ -331,6 +334,8 @@ h6 {
     ),
     url(../assets/images/background/bg-winners-and-gallery.jpg);
   background-position: center 10%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .section-hero-sponsors {
@@ -344,6 +349,8 @@ h6 {
     ),
     url(../assets/images/background/bg-sponsors.jpg);
   background-position: center 10%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .section-hero-contact {
@@ -357,6 +364,8 @@ h6 {
     ),
     url(../assets/images/background/bg-contact.jpg);
   background-position: center 10%;
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 6.4rem 2.4rem;
 }
 
@@ -449,6 +458,23 @@ h6 {
   padding: 5.2rem 2.4rem;
 }
 
+.section-calendar {
+  padding: 4.8rem 2.4rem;
+}
+
+.section-entry {
+  background: linear-gradient(
+    135deg,
+    #f2c4d0,
+    #d4a07a,
+    #9e1f63,
+    #c7547e,
+    #f2c4d0
+  );
+
+  padding: 5.2rem 2.4rem;
+}
+
 @media only screen and (max-width: 36em) {
   .section-hero {
     min-height: 50vh;
@@ -497,6 +523,10 @@ h6 {
 
   .section-cta-block {
     padding: 4.4rem 2.4rem;
+  }
+
+  .section-calendar {
+    padding: 4rem 2.4rem;
   }
 }
 
@@ -1001,6 +1031,10 @@ h6 {
   font-size: 3.2rem;
   color: var(--clr-primary);
   flex-shrink: 0;
+}
+
+.benefits-icon-light {
+  color: var(--clr-white);
 }
 
 .faq {
