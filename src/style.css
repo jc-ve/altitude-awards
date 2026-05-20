@@ -212,7 +212,6 @@ h6 {
   align-items: center;
   justify-content: space-between;
   background-color: var(--clr-white);
-  position: relative;
 }
 
 .header.active .navigation-list {
@@ -262,7 +261,7 @@ h6 {
   color: var(--clr-primary);
 }
 
-@media only screen and (max-width: 48em) {
+@media only screen and (max-width: 56em) {
   .navigation-list {
     opacity: 0;
     visibility: hidden;
@@ -367,6 +366,25 @@ h6 {
   background-size: cover;
   background-repeat: no-repeat;
   padding: 6.4rem 2.4rem;
+}
+
+.section-hero-how {
+  background: linear-gradient(
+      135deg,
+      rgba(249, 232, 240, 0.85),
+      rgba(232, 164, 196, 0.85),
+      rgba(158, 31, 99, 0.85),
+      rgba(110, 21, 72, 0.85),
+      rgba(61, 12, 43, 0.85)
+    ),
+    url(../assets/images/background/bg-how-it-works.webp);
+  background-position: center 20%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.section-steps {
+  padding: 4.8rem 2.4rem;
 }
 
 .section-sponsors {
@@ -564,7 +582,7 @@ h6 {
   opacity: 0;
 }
 
-@media only screen and (max-width: 48em) {
+@media only screen and (max-width: 56em) {
   .btn-navigation {
     display: flex;
     visibility: visible;
@@ -779,7 +797,8 @@ h6 {
 
 .category-btns {
   display: flex;
-  gap: 1.6rem;
+  gap: 1.2rem;
+  font-size: 1.4rem;
 }
 
 @media only screen and (max-width: 48em) {
@@ -1239,4 +1258,24 @@ h6 {
     grid-template-columns: 1fr;
     gap: 3.6rem;
   }
+}
+
+.link:link,
+.link:visited {
+  font-weight: 700;
+  color: var(--clr-primary);
+  transition: color 0.3s ease-in-out;
+}
+
+.link:hover,
+.link:active {
+  color: var(--clr-primary--800);
+}
+
+.list-normal {
+  list-style-position: inside;
+}
+
+.list-normal li {
+  padding-left: 2.4rem;
 }
